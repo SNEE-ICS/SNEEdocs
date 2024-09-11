@@ -17,72 +17,72 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 
 ### End of life
 
-**Codelist:** ind_eol
-**Type:** SNOMED CT
-**Source:** Forthcoming
-**Datasets:** Primary care
-**Rules:** Any code in codelist
+- **Codelist:** ind_eol
+- **Type:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
 
 ### End stage COPD
 
-**Codelist:** ind_end_stage_COPD
-**Type:** SNOMED CT
-**Source:** Forthcoming
-**Datasets:** Primary care
-**Rules:** Any code in codelist
+- **Codelist:** ind_end_stage_COPD
+- **Type:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
 
 ### End stage heart disease
 
-**Codelist:** ind_end_stage_heart
-**Type:** SNOMED CT
-**Source:** Forthcoming
-**Datasets:** Primary care
-**Rules:** Any code in codelist
+- **Codelist:** ind_end_stage_heart
+- **Type:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
 
 ### End stage liver disease
 
-**Codelist:** ind_end_stage_liver
-**Type:** SNOMED CT
-**Source:** Forthcoming
-**Datasets:** Primary care
-**Rules:** Any code in codelist
+- **Codelist:** ind_end_stage_liver
+- **Type:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
 
 ### End stage renal disease
 
-**Codelist:** ind_end_stage_renal
-**Type:** SNOMED CT
-**Source:** Forthcoming
-**Datasets:** Primary care
-**Rules:** Any code in codelist
+- **Codelist:** ind_end_stage_renal
+- **Type:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
 
 ### Hospitalised for asthma (under 24)
 
-**Codelist:** ind_hosp_asthma_under24
-**Type:** SNOMED CT, ICD10
-**Source:** Forthcoming
-**Datasets:** SUS
-**Rules:** Any code in codelist and patient aged under 24
+- **Codelist:** ind_hosp_asthma_under24
+- **Type:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any code in codelist and patient aged under 24
 
 ### Hospitalised for self-harm (under 24)
 
-**Codelist:** ind_hosp_selfharm_under24
-**Type:** SNOMED CT, ICD10
-**Source:** Forthcoming
-**Datasets:** SUS
-**Rules:** Any code in codelist and patient aged under 24
+- **Codelist:** ind_hosp_selfharm_under24
+- **Type:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any code in codelist and patient aged under 24
 
 ### Hospitalised for mental health (under 24)
 
-**Codelist:** ind_hosp_mh_under24
-**Type:** SNOMED CT, ICD10
-**Source:** Forthcoming
-**Datasets:** SUS
-**Rules:** Any code in codelist and patient aged under 24
+- **Codelist:** ind_hosp_mh_under24
+- **Type:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any code in codelist and patient aged under 24
 
 ### Palliative care
 
-**Codelist:** PALCARE_COD
-**Type:** SNOMED CT
-**Source:** PCD Refset Cluster
-**Datasets:** Primary care
-**Rules:** Any code in codelist
+- **Codelist:** PALCARE_COD
+- **Type:** SNOMED CT
+- **Source:** PCD Refset Cluster
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
