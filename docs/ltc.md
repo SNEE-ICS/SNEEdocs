@@ -2,6 +2,24 @@
 
 This page outlines the long-term conditions used for the purposes of population health management analysis in the Suffolk and North East Essex Integrated Care System. Specifically, the below outlines the definitions of conditions that are used in our [segmentation model](segmentation.md), and the definitions of high, medium and low complexity. The below does not reflect any clinical judgement on what does and does not constitute a long-term condition, nor does it reflect which conditions are prioritised for healthcare services. It is a non-exhaustive list.
 
+## Long-term condition list
+
+- [Anxiety](#anxiety)
+- [Asthma](#asthma)
+- [Atrial fibriliation](#atrial-fibriliation)
+- [Chronic kidney disease](#chronic-kidney-disease)
+- [COPD](#copd)
+- [Depression](#depression)
+- [Diabetes](#diabetes)
+- [Epilepsy](#epilepsy)
+- [Heart failure](#heart-failure)
+- [Hypertension](#hypertension)
+- [Learning disability](#learning-disability)
+- [Osteoporosis](#osteoporosis)
+- [Peripheral vascular disease](#peripheral-vascular-disease)
+- [Stroke](#stroke)
+- [Transient ischaemic attack (TIA)](#transient-ischaemic-attack-tia)
+
 ## Complexity definitions
 
 |Level|Definition|
