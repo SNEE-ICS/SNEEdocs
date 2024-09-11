@@ -1,6 +1,6 @@
 # Long-term conditions and complexity
 
-This page outlines the long-term conditions used for the purposes of population health management analysis in the Suffolk and North East Essex Integrated Care System. Specifically, the below outlines the conditions that are used in our [segmentation model](segmentation.md), and in definitions of high, medium and low complexity. The below does not reflect any clinical judgement on what does and does not constitute a long-term condition, nor does it reflect which conditions are prioritised for healthcare services. It is a non-exhaustive list.
+This page outlines the long-term conditions used for the purposes of population health management analysis in the Suffolk and North East Essex Integrated Care System. Specifically, the below outlines the definitions of conditions that are used in our [segmentation model](segmentation.md), and the definitions of high, medium and low complexity. The below does not reflect any clinical judgement on what does and does not constitute a long-term condition, nor does it reflect which conditions are prioritised for healthcare services. It is a non-exhaustive list.
 
 ## Complexity definitions
 
