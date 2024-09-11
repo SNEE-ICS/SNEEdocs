@@ -23,7 +23,7 @@ This page lays out the technical logic and definitions that underpin the Suffolk
 
 ## Segment element definitions
 
-Each segment element comprises of a codelist one or more clinical codes. These definitions are provided below. Where possible, definitions are taken from [primary care domain reference set clusters](https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/quality-and-outcomes-framework-qof/quality-and-outcome-framework-qof-business-rules/primary-care-domain-reference-set-portal). Where this is not possible, manual codelists are provided.
+Each segment element comprises of a codelist one or more clinical codes. These definitions are provided below. Where possible, definitions are taken from [primary care domain reference set clusters](https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/quality-and-outcomes-framework-qof/quality-and-outcome-framework-qof-business-rules/primary-care-domain-reference-set-portal). Where this is not possible, manual codelists have been used and will be populated in due course.
 
 ### Anxiety
 
