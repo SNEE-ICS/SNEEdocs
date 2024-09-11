@@ -18,8 +18,8 @@ This page lays out the technical logic and definitions that underpin the Suffolk
 |Age well|3|[Hospitalised for hip fracture](#hospitalised-for-hip-fracture), [Hospitalised for stroke](#hospitalised-for-stroke), [Hospitalised for a fall](#hospitalised-for-a-fall), [Hospitalised for frailty](#hospitalised-for-frailty), [Dementia](#dementia), [Four or more LTCs](#four-or-more-ltcs), [Severe frailty](#severe-frailty), [Housebound](#housebound), [Has a carer](#has-a-carer)|
 |Stay well|4|[One to three LTCs](#one-to-three-ltcs), [Cancer](#cancer), [Moderate frailty](#moderate-frailty)|
 |Feel well|5|[Serious mental illness](), [Depression](#depression), [Anxiety](#anxiety), [Care contact for mental health](#care-contact-for-mental-health), [Hospitalised for mental health](#hospitalised-for-mental-health), [Hospitalised for alcohol](#hospitalised-for-alcohol), [Hospitalised for drugs](#hospitalised-for-drugs), [Hospitalised for self-harm](#hospitalised-for-self-harm), [Hospitalised for homelessness](#hospitalised-for-homelessness)|
-|Be well|6| |
-|Live well|7| Does not meet the criteria for any other segment.|
+|Be well|6|[Hospitalised for emergency dentistry](#hospitalised-for-emergency-dentistry), [Obese](#obese), [Smoker](#smoker), [Increased alcohol risk](#increased-alcohol-risk), [High alcohol risk](#high-alcohol-risk)|
+|Live well|7| Does not meet the criteria for any other segment|
 
 ## Segment element definitions
 
@@ -121,6 +121,14 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
 
+### High alcohol risk
+
+- **Codelist:** ind_high_alcohol_risk
+- **Coding scheme:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
+
 ### Hospitalised for alcohol
 
 - **Codelist:** ind_hosp_alcohol
@@ -148,6 +156,14 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Hospitalised for drugs
 
 - **Codelist:** ind_hosp_drug
+- **Coding scheme:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
+
+### Hospitalised for emergency dentistry
+
+- **Codelist:** ind_hosp_dentistry
 - **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
@@ -225,6 +241,14 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
 
+### Increased alcohol risk
+
+- **Codelist:** ind_increased_alcohol_risk
+- **Coding scheme:** SNOMED CT
+- **Source:** Forthcoming
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
+
 ### Moderate frailty
 
 - **Codelist:** MODFRAIL_COD
@@ -232,6 +256,14 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
+
+### Obese
+
+- **Codelist:** BMI_COD
+- **Coding scheme:** SNOMED CT
+- **Source:** PCD Refset Cluster
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist within the last 12 months where BMI value is over 30
 
 ### One to three LTCs
 
@@ -260,6 +292,14 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Severe frailty
 
 - **Codelist:** SEVFRAIL_COD
+- **Coding scheme:** SNOMED CT
+- **Source:** PCD Refset Cluster
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
+
+### Smoker
+
+- **Codelist:** SMOK_COD
 - **Coding scheme:** SNOMED CT
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
