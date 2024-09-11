@@ -1,3 +1,5 @@
+![logo](assets/SNEE_IF_logo.png)
+
 # Segmentation in Suffolk and North East Essex
 
 This page lays out the technical logic and definitions that underpin the Suffolk and North East Essex Integrated Care System population segmentation model.
