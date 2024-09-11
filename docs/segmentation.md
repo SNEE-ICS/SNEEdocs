@@ -1,5 +1,7 @@
 # Segmentation in Suffolk and North East Essex
 
+This page lays out the technical logic and definitions that underpin Suffolk and North East Essex Integrated Care System population segmentation model.
+
 ## Model structure and logic
 
 - A **segment** refers to a group of the population. In our model, every patient goes into one and only one segment.
@@ -12,7 +14,7 @@
 |Segment Name|Segment priority|Segment elements|
 |---|---|---|
 |Die well|1|[Palliative care](#palliative-care), [End of life](#end-of-life), [End stage liver disease](#end-stage-liver-disease), [End stage heart disease](#end-stage-heart-disease), [End stage renal disease](#end-stage-renal-disease), [End stage COPD](#end-stage-copd)|
-|Start well|2|[Hospitalised for asthma (under 24)](#hospitalised-for-asthma-under-24), [Hospitalised for self-harm (under 24)](#hospitalised-for-self-harm-under-24), [Hospitalised for mental health (under 24)](#hospitalised-for-mental-health-under-24)|
+|Start well|2|[Hospitalisved for asthma (under 24)](#hospitalised-for-asthma-under-24), [Hospitalised for self-harm (under 24)](#hospitalised-for-self-harm-under-24), [Hospitalised for mental health (under 24)](#hospitalised-for-mental-health-under-24)|
 
 
 ## Segment element definitions
