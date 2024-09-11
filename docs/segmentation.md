@@ -2,13 +2,17 @@
 
 ## Model structure and logic
 
+- A **segment** refers to a group of the population. In our model, every patient goes into one and only one segment.
+- A segment is defined by **segment elements**. Each segment element is a rule or set of related rules that can be evaluated as true or false. A patient meets the criteria for a segment if they meet the criteria for any segment element within that segment. 
+- **Segment priority** is used to deal with overlap. If a patient meets the criteria to fit into more than one segment, they go into the highest priority segment.
+
+
 ## Segment definitions
 
 |Segment Name|Segment priority|Segment elements|
 |---|---|---|
 |Die well|1|[Palliative care](#palliative-care), [End of life](#end-of-life), [End stage liver disease](#end-stage-liver-disease), [End stage heart disease](#end-stage-heart-disease), [End stage renal disease](#end-stage-renal-disease), [End stage COPD](#end-stage-copd)|
 |Start well|2|[Hospitalised for asthma (under 24)](#hospitalised-for-asthma-under-24), [Hospitalised for self-harm (under 24)](#hospitalised-for-self-harm-under-24), [Hospitalised for mental health (under 24)](#hospitalised-for-mental-health-under-24)|
-
 
 
 ## Segment element definitions
