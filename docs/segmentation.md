@@ -17,7 +17,7 @@ This page lays out the technical logic and definitions that underpin the Suffolk
 |Start well|2|[Hospitalised for asthma (under 24)](#hospitalised-for-asthma-under-24), [Hospitalised for self-harm (under 24)](#hospitalised-for-self-harm-under-24), [Hospitalised for mental health (under 24)](#hospitalised-for-mental-health-under-24)|
 |Age well|3|[Hospitalised for hip fracture](#hospitalised-for-hip-fracture), [Hospitalised for stroke](#hospitalised-for-stroke), [Hospitalised for a fall](#hospitalised-for-a-fall), [Hospitalised for frailty](#hospitalised-for-frailty), [Dementia](#dementia), [Four or more LTCs](#four-or-more-ltcs), [Severe frailty](#severe-frailty), [Housebound](#housebound), [Has a carer](#has-a-carer)|
 |Stay well|4|[One to three LTCs](#one-to-three-ltcs), [Cancer](#cancer), [Moderate frailty](#moderate-frailty)|
-|Feel well|5| |
+|Feel well|5|[Serious mental illness](), [Depression](#depression), [Anxiety](#anxiety), [Care contact for mental health](#care-contact-for-mental-health), [Hospitalised for mental health](#hospitalised-for-mental-health), [Hospitalised for alcohol](#hospitalised-for-alcohol), [Hospitalised for drugs](#hospitalised-for-drugs), [Hospitalised for self-harm](#hospitalised-for-self-harm), [Hospitalised for homelessness](#hospitalised-for-homelessness)|
 |Be well|6| |
 |Live well|7| Does not meet the criteria for any other segment.|
 
@@ -25,18 +25,42 @@ This page lays out the technical logic and definitions that underpin the Suffolk
 
 Each segment element comprises of a codelist one or more clinical codes. These definitions are provided below. Where possible, definitions are taken from [primary care domain reference set clusters](https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/quality-and-outcomes-framework-qof/quality-and-outcome-framework-qof-business-rules/primary-care-domain-reference-set-portal). Where this is not possible, manual codelists are provided.
 
+### Anxiety
+
+- **Codelist:** opensafely/anxiety-disorders
+- **Coding scheme:** SNOMED CT
+- **Source:** [Open codelists](https://www.opencodelists.org/codelist/opensafely/anxiety-disorders/6aef605a/)
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
+
 ### Cancer
 
 - **Codelist:** CAN_COD
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
 
+### Care contact for mental health
+
+- **Codelist:** ind_cc_mh
+- **Coding scheme:** NA
+- **Source:** PCD Refset Cluster
+- **Datasets:** MHSDS
+- **Rules:** Any care contact within MHSDS in last year
+
 ### Dementia
 
 - **Codelist:** DEM_COD
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
+- **Source:** PCD Refset Cluster
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
+
+### Depression
+
+- **Codelist:** DEPR_COD
+- **Coding scheme:** SNOMED CT
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -44,7 +68,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### End of life
 
 - **Codelist:** ind_eol
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -52,7 +76,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### End stage COPD
 
 - **Codelist:** ind_end_stage_COPD
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -60,7 +84,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### End stage heart disease
 
 - **Codelist:** ind_end_stage_heart
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -68,7 +92,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### End stage liver disease
 
 - **Codelist:** ind_end_stage_liver
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -76,7 +100,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### End stage renal disease
 
 - **Codelist:** ind_end_stage_renal
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -84,7 +108,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Four or more LTCs
 
 - **Codelist:** [Long-term conditions](ltc.md)
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:**  [Long-term conditions](ltc.md)
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist for at least four LTCs
@@ -92,71 +116,111 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Has a carer
 
 - **Codelist:** ind_has_carer
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
 
+### Hospitalised for alcohol
+
+- **Codelist:** ind_hosp_alcohol
+- **Coding scheme:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
+
 ### Hospitalised for asthma (under 24)
 
 - **Codelist:** ind_hosp_asthma_under24
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist and patient aged under 24
+- **Rules:** Any A&E attendance or admission with code in codelist within last year, and patient aged under 24
 
 ### Hospitalised for a fall
 
 - **Codelist:** ind_hosp_fall
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
+
+### Hospitalised for drugs
+
+- **Codelist:** ind_hosp_drug
+- **Coding scheme:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
 
 ### Hospitalised for frailty
 
 - **Codelist:** ind_hosp_frailty
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
 
 ### Hospitalised for hip fracture
 
 - **Codelist:** ind_hosp_hip
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
+
+### Hospitalised for homelessness
+
+- **Codelist:** ind_hosp_homeless
+- **Coding scheme:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
+
+### Hospitalised for mental health
+
+- **Codelist:** ind_hosp_mh
+- **Coding scheme:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
 
 ### Hospitalised for mental health (under 24)
 
 - **Codelist:** ind_hosp_mh_under24
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist and patient aged under 24
+- **Rules:** Any A&E attendance or admission with code in codelist within last year, and patient aged under 24
+
+### Hospitalised for self-harm
+
+- **Codelist:** ind_hosp_selfharm
+- **Coding scheme:** SNOMED CT, ICD10
+- **Source:** Forthcoming
+- **Datasets:** SUS
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
 
 ### Hospitalised for self-harm (under 24)
 
 - **Codelist:** ind_hosp_selfharm_under24
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist and patient aged under 24
+- **Rules:** Any A&E attendance or admission with code in codelist within last year, and patient aged under 24
 
 ### Hospitalised for stroke
 
 - **Codelist:** ind_hosp_stroke
-- **Type:** SNOMED CT, ICD10
+- **Coding scheme:** SNOMED CT, ICD10
 - **Source:** Forthcoming
 - **Datasets:** SUS
-- **Rules:** Any code in codelist
+- **Rules:** Any A&E attendance or admission with code in codelist within last year
 
 ### Housebound
 
 - **Codelist:** ind_housebound
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** Forthcoming
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -164,7 +228,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Moderate frailty
 
 - **Codelist:** MODFRAIL_COD
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -172,7 +236,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### One to three LTCs
 
 - **Codelist:** [Long-term conditions](ltc.md)
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:**  [Long-term conditions](ltc.md)
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist for one, two or three LTCs
@@ -180,7 +244,15 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Palliative care
 
 - **Codelist:** PALCARE_COD
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
+- **Source:** PCD Refset Cluster
+- **Datasets:** Primary care
+- **Rules:** Any code in codelist
+
+### Serious mental illness
+
+- **Codelist:** MH_COD
+- **Coding scheme:** SNOMED CT
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
@@ -188,7 +260,7 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 ### Severe frailty
 
 - **Codelist:** SEVFRAIL_COD
-- **Type:** SNOMED CT
+- **Coding scheme:** SNOMED CT
 - **Source:** PCD Refset Cluster
 - **Datasets:** Primary care
 - **Rules:** Any code in codelist
