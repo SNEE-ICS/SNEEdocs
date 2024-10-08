@@ -2,7 +2,7 @@
 
 # Segmentation in Suffolk and North East Essex
 
-This page lays out the technical logic and definitions that underpin the Suffolk and North East Essex Integrated Care System population segmentation model.
+This page lays out the technical logic and definitions that underpin the Suffolk and North East Essex Integrated Care System population segmentation model. This model is used for adults, and work for children and young people is forthcoming.
 
 ## Model structure and logic
 
@@ -16,12 +16,11 @@ This page lays out the technical logic and definitions that underpin the Suffolk
 |Segment Name|Segment priority|Segment elements|
 |---|---|---|
 |Die well|1|[Palliative care](#palliative-care), [End of life](#end-of-life), [End stage liver disease](#end-stage-liver-disease), [End stage heart disease](#end-stage-heart-disease), [End stage renal disease](#end-stage-renal-disease), [End stage COPD](#end-stage-copd)|
-|Start well|2|[Hospitalised for asthma (under 24)](#hospitalised-for-asthma-under-24), [Hospitalised for self-harm (under 24)](#hospitalised-for-self-harm-under-24), [Hospitalised for mental health (under 24)](#hospitalised-for-mental-health-under-24)|
-|Age well|3|[Hospitalised for hip fracture](#hospitalised-for-hip-fracture), [Hospitalised for stroke](#hospitalised-for-stroke), [Hospitalised for a fall](#hospitalised-for-a-fall), [Hospitalised for frailty](#hospitalised-for-frailty), [Dementia](#dementia), [Four or more LTCs](#four-or-more-ltcs), [Severe frailty](#severe-frailty), [Housebound](#housebound), [Has a carer](#has-a-carer)|
-|Stay well|4|[One to three LTCs](#one-to-three-ltcs), [Cancer](#cancer), [Moderate frailty](#moderate-frailty)|
-|Feel well|5|[Serious mental illness](), [Depression](#depression), [Anxiety](#anxiety), [Care contact for mental health](#care-contact-for-mental-health), [Hospitalised for mental health](#hospitalised-for-mental-health), [Hospitalised for alcohol](#hospitalised-for-alcohol), [Hospitalised for drugs](#hospitalised-for-drugs), [Hospitalised for self-harm](#hospitalised-for-self-harm), [Hospitalised for homelessness](#hospitalised-for-homelessness)|
-|Be well|6|[Hospitalised for emergency dentistry](#hospitalised-for-emergency-dentistry), [Obese](#obese), [Smoker](#smoker), [Increased alcohol risk](#increased-alcohol-risk), [High alcohol risk](#high-alcohol-risk)|
-|Live well|7| Does not meet the criteria for any other segment|
+|Age well|2|[Hospitalised for hip fracture](#hospitalised-for-hip-fracture), [Hospitalised for stroke](#hospitalised-for-stroke), [Hospitalised for a fall](#hospitalised-for-a-fall), [Hospitalised for frailty](#hospitalised-for-frailty), [Dementia](#dementia), [Four or more LTCs](#four-or-more-ltcs), [Severe frailty](#severe-frailty), [Housebound](#housebound), [Has a carer](#has-a-carer)|
+|Stay well|3|[One to three LTCs](#one-to-three-ltcs), [Cancer](#cancer), [Moderate frailty](#moderate-frailty)|
+|Feel well|4|[Serious mental illness](), [Depression](#depression), [Anxiety](#anxiety), [Care contact for mental health](#care-contact-for-mental-health), [Hospitalised for mental health](#hospitalised-for-mental-health), [Hospitalised for alcohol](#hospitalised-for-alcohol), [Hospitalised for drugs](#hospitalised-for-drugs), [Hospitalised for self-harm](#hospitalised-for-self-harm), [Hospitalised for homelessness](#hospitalised-for-homelessness)|
+|Be well|5|[Hospitalised for emergency dentistry](#hospitalised-for-emergency-dentistry), [Obese](#obese), [Smoker](#smoker), [Increased alcohol risk](#increased-alcohol-risk), [High alcohol risk](#high-alcohol-risk)|
+|Live well|6| Does not meet the criteria for any other segment|
 
 ## Segment element definitions
 
@@ -139,14 +138,6 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 - **Datasets:** SUS
 - **Rules:** Any A&E attendance or admission with code in codelist within last year
 
-### Hospitalised for asthma (under 24)
-
-- **Codelist:** ind_hosp_asthma_under24
-- **Coding scheme:** SNOMED CT, ICD10
-- **Source:** Forthcoming
-- **Datasets:** SUS
-- **Rules:** Any A&E attendance or admission with code in codelist within last year, and patient aged under 24
-
 ### Hospitalised for a fall
 
 - **Codelist:** ind_hosp_fall
@@ -203,14 +194,6 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 - **Datasets:** SUS
 - **Rules:** Any A&E attendance or admission with code in codelist within last year
 
-### Hospitalised for mental health (under 24)
-
-- **Codelist:** ind_hosp_mh_under24
-- **Coding scheme:** SNOMED CT, ICD10
-- **Source:** Forthcoming
-- **Datasets:** SUS
-- **Rules:** Any A&E attendance or admission with code in codelist within last year, and patient aged under 24
-
 ### Hospitalised for self-harm
 
 - **Codelist:** ind_hosp_selfharm
@@ -218,14 +201,6 @@ Each segment element comprises of a codelist one or more clinical codes. These d
 - **Source:** Forthcoming
 - **Datasets:** SUS
 - **Rules:** Any A&E attendance or admission with code in codelist within last year
-
-### Hospitalised for self-harm (under 24)
-
-- **Codelist:** ind_hosp_selfharm_under24
-- **Coding scheme:** SNOMED CT, ICD10
-- **Source:** Forthcoming
-- **Datasets:** SUS
-- **Rules:** Any A&E attendance or admission with code in codelist within last year, and patient aged under 24
 
 ### Hospitalised for stroke
 
