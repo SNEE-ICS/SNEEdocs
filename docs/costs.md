@@ -24,11 +24,11 @@ This page contains our methodology for estimating costs of health activity. Note
 |CLD|Adult social care|Review|[£45](#adult-social-care-review)|
 |CLD|Adult social care|Request|[£45](#adult-social-care-request)|
 |CLD|Adult social care|Assessment|[£45](#adult-social-care-assessment)| 
-|CLD|Adult social care|Carer support|[£20.19](#adult-social-care-carer-support)|
-|CLD|Adult social care|Long-term support: community|[£61.70](#adult-social-care-long-term-support-community)|
-|CLD|Adult social care|Long-term support: Residential home|[£148.73](#adult-social-care-long-term-support-residential-home)|
-|CLD|Adult social care|Long-term support: Nusing home|[£172.66](#adult-social-care-long-term-support-nursing-home)|
-|CLD|Adult social care|Short-term support|[£159.63](#adult-social-care-short-term-support)|
+|CLD|Adult social care|Carer support|[£20](#adult-social-care-carer-support)|
+|CLD|Adult social care|Long-term support: community|[£62](#adult-social-care-long-term-support-community)|
+|CLD|Adult social care|Long-term support: Residential home|[£149](#adult-social-care-long-term-support-residential-home)|
+|CLD|Adult social care|Long-term support: Nusing home|[£173](#adult-social-care-long-term-support-nursing-home)|
+|CLD|Adult social care|Short-term support|[£160](#adult-social-care-short-term-support)|
 
 ## Methodology
 
@@ -44,7 +44,7 @@ Our mental health activity is estimates using the [mental health services datase
 
 ### Mental health inpatient
 
-We have been unable to find good data on the cost per day of mental health inpatient stays. Our best source is a [freedom of information request](https://www.elft.nhs.uk/sites/default/files/2022-01/anon_response_-_foi_da3620.pdf) to East London NHS Foundation Trust, which we have adjusted for inflation.
+We have been unable to find good data on the cost per day of mental health inpatient stays. Our best source is a [freedom of information request](https://www.elft.nhs.uk/sites/default/files/2022-01/anon_response_-_foi_da3620.pdf) to East London NHS Foundation Trust, which we have adjusted for inflation. All costs are rounded to the nearest pound.
 
 
 ### Mental health care contact
