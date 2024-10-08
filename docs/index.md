@@ -4,6 +4,7 @@ This site contains documentation about health intelligence and population health
 
 - Our [segmentation model](segmentation.md) logic and segmentation definitions
 - Our definitions and codelists used for [long-term conditions](ltc.md) and complexity
+- Our methodology for estimating [costs](costs.md) of healthcare activity
 
 ## Contributing
 
