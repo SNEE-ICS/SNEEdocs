@@ -2,7 +2,7 @@
 
 # Activity types and cost
 
-This page contains our methodology for estimating costs of health activity. Note that these costs are used to compare healthcare activity across different sectors, and do not reflect actual expenditure.
+This page contains our methodology for estimating costs of health activity. Note that these costs are used to compare healthcare activity across different sectors, and do not reflect actual expenditure. Click on the links in the table below to see methodology for individual cost estimates.
 
 ## Activity types and cost table
 
@@ -14,7 +14,7 @@ This page contains our methodology for estimating costs of health activity. Note
 |SUS|Acute inpatient|Non-elective non-emergency|Row level costings|
 |SUS|Acute outpatient|First|Row level costings|
 |SUS|Acute outpatient|Follow up|Row level costings|
-|MHSDS|Mental health|Inpatient|[£564]((#mental-health-inpatient))|
+|MHSDS|Mental health|Inpatient|[£564](#mental-health-inpatient)|
 |MHSDS|Mental health|Care contact|[£275](#mental-health-care-contact)|
 |IAPT|IAPT|Care contact|[£139](#iapt-care-contact)|
 |Primary care|Primary care|Telephone/video appointment|[£45](#primary-care-telephonevideo-appointment)|
